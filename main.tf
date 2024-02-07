@@ -4,13 +4,13 @@ provider "aws" {
 
 module "ecr" {
   region = var.region
-  source                 = "./modules/ecr-repository"   # Assuming ecr-module is the directory where your ECR module is located
+  source                 = "./modules/ecr-repository"
   ecr_repository_name    = var.ecr_repository_name
 }
 
 module "eks" {
   region = var.region
-  source                 = "./modules/eks-cluster"   # Assuming eks-module is the directory where your EKS module is located
+  source                 = "./modules/eks-cluster"   
   eks_role_name          = var.eks_role_name
   cluster_name           = var.cluster_name
   subnet_ids             = var.subnet_ids
