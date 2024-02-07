@@ -1,8 +1,8 @@
-region             = "us-east-1"
+region             = "add region"
 eks_role_name      = "eks-role"
-cluster_name       = "my-eks-cluster"
-subnet_ids         = ["subnet-0ab6ee277d0b523f8", "subnet-0c192bb582f2042c0", "subnet-0ab26cb3321e0c2ee"]
-security_group_ids = ["sg-02cc70c89c7680abd"]
+cluster_name       = "add your cluster name here"
+subnet_ids         = ["subnet-1", "subnet-2", "subnet-3"]
+security_group_ids = ["security grou ID"]
 endpoint_public_access = true
 endpoint_private_access = true
 node_group_name           = "my-node-group"
